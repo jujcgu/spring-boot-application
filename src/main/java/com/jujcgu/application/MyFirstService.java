@@ -27,6 +27,9 @@ public class MyFirstService {
 	public String getOSName() {
 		return "Operation System is: " + environment.getProperty("os.name");
 	}
+	public String readProp() {
+		return environment.getProperty("my.custom.property");
+	}
 
 	@Autowired
 	public void setEnvironment(Environment environment) {

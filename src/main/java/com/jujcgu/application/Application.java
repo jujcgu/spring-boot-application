@@ -12,6 +12,7 @@ public class Application {
         MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
         System.out.println(myFirstService.tellAStrory());
         System.out.println(myFirstService.getJavaVersion());
+        System.out.println(myFirstService.getOSName());
     }
 
 }

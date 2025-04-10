@@ -23,6 +23,10 @@ public class MyFirstService {
 	public String getJavaVersion() {
 		return "Java version is: " + environment.getProperty("java.version");
 	}
+	
+	public String getOSName() {
+		return "Operation System is: " + environment.getProperty("os.name");
+	}
 
 	@Autowired
 	public void setEnvironment(Environment environment) {

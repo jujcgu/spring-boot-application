@@ -2,7 +2,6 @@ package com.jujcgu.application;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class ApplicationConfig {
@@ -18,7 +17,6 @@ public class ApplicationConfig {
     }
     
     @Bean
-    @Primary
     MyFirstClass myThirdBean() {
         return new MyFirstClass("Third Bean");
     }

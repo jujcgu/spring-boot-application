@@ -11,9 +11,9 @@ public class Application {
 
         MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
         System.out.println(myFirstService.tellAStrory());
-        System.out.println(myFirstService.getJavaVersion());
-        System.out.println(myFirstService.getOSName());
-        System.out.println(myFirstService.readProp());
+        System.out.println(myFirstService.getCustomProperty());
+        System.out.println(myFirstService.getCustomPropertyFromAnotherFile());
+        System.out.println(myFirstService.getCustomPropertyInteger());
     }
 
 }

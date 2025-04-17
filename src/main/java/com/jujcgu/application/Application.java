@@ -12,8 +12,9 @@ public class Application {
         MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
         System.out.println(myFirstService.tellAStrory());
         System.out.println(myFirstService.getCustomProperty());
-        System.out.println(myFirstService.getCustomPropertyFromAnotherFile());
         System.out.println(myFirstService.getCustomPropertyInteger());
+        System.out.println(myFirstService.getCustomPropertyFromAnotherFile());
+
     }
 
 }

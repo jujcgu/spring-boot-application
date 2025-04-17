@@ -11,13 +11,13 @@ public class MyFirstService {
 
 	private final MyFirstClass myFirstClass;
 
-	@Value("Hellow Juan Castro")
+	@Value("${my.custom.property}")
 	private String customProperty;
 
 	@Value("${my.prop}")
 	private String customPropertyFromAnotherFile;
 
-	@Value("123")
+	@Value("${my.custom.property.integer}")
 	private Integer customPropertyInteger;
 
 	public MyFirstService(@Qualifier("bean1") MyFirstClass myFirstClass) {
